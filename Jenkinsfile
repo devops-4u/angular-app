@@ -25,7 +25,7 @@ pipeline {
 
         stage('Build Angular Application') {
             steps {
-                echo 'Building Angular application...'
+                echo 'Building Angular applicationss...'
                 sh "docker build -t ${DOCKER_IMAGE} ."
             }
         }

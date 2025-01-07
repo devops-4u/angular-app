@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Version Check') {
             steps {
-                echo 'Checking jenkins version'
+                echo 'Checking jenkins version!!'
                 sh 'jenkins --version'
             }
         }

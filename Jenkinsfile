@@ -10,14 +10,14 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                echo 'Checking out code from DEV branch...'
+                echo 'Checking out the code from DEV branch...'
                 checkout scm
             }
         }
     stages {
         stage('Version Check') {
             steps {
-                echo 'Checking jenkins version'
+                echo 'Checking jenkins version!!'
                 sh 'jenkins --version'
             }
         }
@@ -25,7 +25,7 @@ pipeline {
 
         stage('Build Angular Application') {
             steps {
-                echo 'Building Angular application...'
+                echo 'Building Angular applicationss...'
                 sh "docker build -t ${DOCKER_IMAGE} ."
             }
         }

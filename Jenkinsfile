@@ -14,6 +14,14 @@ pipeline {
                 checkout scm
             }
         }
+    stages {
+        stage('Version Check') {
+            steps {
+                echo 'Checking version'
+                sh 'jenkins --version'
+            }
+        }
+              
 
         stage('Build Angular Application') {
             steps {
